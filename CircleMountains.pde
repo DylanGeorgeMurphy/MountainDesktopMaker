@@ -8,14 +8,14 @@ int XBorder = 500;     //border sizes
 int YBorder = 100;
 boolean Transparent = false; //if mountains are transparent
 
-color SquareColour = color(255, 255, 255);
+color SquareColour = color(255);
 color LinesColour = color(255);
 
 //main
 void setup(){
   size(1920, 1080);
   background(0);
-  Start();
+  drawMountain();
   noFill();
   strokeWeight(3);
   stroke(SquareColour);
@@ -35,7 +35,7 @@ float Fade(float x){
 };
 
 
-void Start(){
+void drawMountain(){
   fill(0);
   strokeWeight(1);
   
